@@ -26,7 +26,8 @@ class TheHolyRogerCoin(Sha256Chain):
         chain.address_version = "\x3D"
         chain.script_addr_vers = '\x46'
         chain.magic = "\xfc\xc2\xc4\xeb"
-        Sha256Chain.__init__(chain, **kwargs)
+#        Sha256Chain.__init__(chain, **kwargs)
+        super(TheHolyRogerCoin, chain).__init__(**kwargs)
 
 
     datadir_conf_file_name = 'theholyroger.conf'

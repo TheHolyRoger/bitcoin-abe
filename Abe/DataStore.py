@@ -66,6 +66,8 @@ CHAIN_CONFIG = [
     {"chain":"Bitcoin"},
     {"chain":"Testnet"},
     {"chain":"Namecoin"},
+    {"chain":"TheHolyRogerCoin", "policy":"Sha256Chain",
+     "code3":"ROGER", "address_version":"\x3D", "magic":"\xfc\xc2\xc4\xeb"},
     {"chain":"Weeds", "policy":"Sha256Chain",
      "code3":"WDS", "address_version":"\xf3", "magic":"\xf8\xbf\xb5\xda"},
     {"chain":"BeerTokens", "policy":"Sha256Chain",
