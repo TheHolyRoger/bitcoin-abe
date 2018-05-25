@@ -23,9 +23,9 @@ class TheHolyRogerCoin(Sha256Chain):
     def __init__(chain, **kwargs):
         chain.name = "TheHolyRogerCoin"
         chain.code3 = "ROGER"
-        chain.address_version = "\x3D"
+        chain.address_version = '\x3D'
         chain.script_addr_vers = '\x46'
-        chain.magic = "\xfc\xc2\xc4\xeb"
+        chain.magic = '\xfc\xc2\xc4\xeb'
 #        Sha256Chain.__init__(chain, **kwargs)
         super(TheHolyRogerCoin, chain).__init__(**kwargs)
 
