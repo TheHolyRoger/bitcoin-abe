@@ -14,13 +14,21 @@
 # License along with this program.  If not, see
 # <http://www.gnu.org/licenses/agpl.html>.
 
-from . import BaseChain
-from .LtcScryptChain import LtcScryptChain
+from .Sha256Chain import Sha256Chain
 
-class TheHolyRogerCoin(LtcScryptChain):
+class TheHolyRogerCoin(Sha256Chain):
     """
     Chain with NovaCoin-style proof of stake.
     """
+    def __init__(chain, **kwargs):
+        chain.name = "TheHolyRogerCoin"
+        chain.code3 = "ROGER"
+        chain.address_version = "\x3D"
+        chain.script_addr_vers = '\x46'
+        chain.magic = "\xfc\xc2\xc4\xeb"
+        Sha256Chain.__init__(chain, **kwargs)
+
+
     datadir_conf_file_name = 'theholyroger.conf'
     datadir_rpcport = 9662
     datadir_p2pport = 9663
