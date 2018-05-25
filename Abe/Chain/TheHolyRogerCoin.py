@@ -20,6 +20,11 @@ class TheHolyRogerCoin(Sha256Chain):
     """
     Chain with NovaCoin-style proof of stake.
     """
+
+    datadir_conf_file_name = "theholyroger.conf"
+    datadir_rpcport = 9662
+    datadir_p2pport = 9663
+    
     def __init__(chain, **kwargs):
         chain.name = 'TheHolyRogerCoin'
         chain.code3 = 'ROGER'
@@ -28,8 +33,3 @@ class TheHolyRogerCoin(Sha256Chain):
         chain.magic = '\xfc\xc2\xc4\xeb'
 #        Sha256Chain.__init__(chain, **kwargs)
         super(TheHolyRogerCoin, chain).__init__(**kwargs)
-
-
-    datadir_conf_file_name = 'theholyroger.conf'
-    datadir_rpcport = 9662
-    datadir_p2pport = 9663
