@@ -21,8 +21,8 @@ class TheHolyRogerCoin(Sha256Chain):
     Chain with NovaCoin-style proof of stake.
     """
     def __init__(chain, **kwargs):
-        chain.name = "TheHolyRogerCoin"
-        chain.code3 = "ROGER"
+        chain.name = 'TheHolyRogerCoin'
+        chain.code3 = 'ROGER'
         chain.address_version = '\x3D'
         chain.script_addr_vers = '\x46'
         chain.magic = '\xfc\xc2\xc4\xeb'
