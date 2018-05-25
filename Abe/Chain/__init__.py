@@ -257,4 +257,4 @@ class BaseChain(object):
         return chain.pubkey_hash(script)
 
     datadir_conf_file_name = "theholyroger.conf"
-    datadir_rpcport = 8332
+    datadir_rpcport = 9662
